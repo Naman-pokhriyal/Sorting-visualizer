@@ -1,0 +1,47 @@
+.bar {
+  height: 200px;
+  width: 2em;
+  margin: 0 1em;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(-30deg);
+}
+
+.side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(254, 254, 254, 0.25);
+  border: 1px solid rgba(80, 80, 80, 0.1);
+}
+.back {
+  transform: translateZ(-0px);
+}
+.front {
+  transform: translateZ(-32px);
+}
+.left {
+  transform-origin: left;
+  transform: rotateY(90deg);
+}
+.right {
+  transform-origin: right;
+  transform: rotateY(-90deg);
+}
+.top {
+  height: 34px;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+  /* background: rgba(255, 0, 120, 0.5); */
+}
+.bottom {
+  height: 34px;
+  transform-origin: top;
+  /* background: rgba(255, 0, 120, 0.5);
+  box-shadow: rgba(255, 0, 120, 0.2); */
+  transition: 0.3s;
+}
+.color-bar {
+  /* background: rgba(255, 0, 120, 0.5);
+  box-shadow: rgba(255, 0, 120, 0.2); */
+  transition: 0.3s;
+}
